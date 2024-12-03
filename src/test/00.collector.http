@@ -1,0 +1,32 @@
+### 번개장터 수집
+POST {{host}}/collector/bunjang
+
+### 중고나라 수집
+POST {{host}}/collector/junggonara
+
+### 세컨웨어 수집
+POST {{host}}/collector/secondwear
+
+### 당근마켓 수집
+POST {{host}}/collector/carrot-market
+
+### 네이버 수집
+POST {{host}}/collector/naver-shopping
+
+### 한번에 수집
+POST {{host}}/collector/collect/all
+
+
+### 모델명 업데이트
+POST {{host}}/collector/update/model
+
+### 업로드 데이트 업데이트
+POST {{host}}/collector/update/null-date
+
+### 지역코드 저장
+GET {{host}}/temp/save/location
+Content-Type: application/json; charset=utf-8
+
+### 업로드일
+GET {{host}}/collector/update/upload-date
+Content-Type: application/json; charset=utf-8

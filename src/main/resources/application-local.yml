@@ -1,0 +1,33 @@
+server:
+  port: 8090
+
+spring:
+  datasource:
+    #    url: jdbc:h2:mem:testdb
+    #    username: sa
+    #    password:
+    #    driver-class-name: org.h2.Driver
+    url: jdbc:postgresql://localhost:5432/
+    username: postgres
+    password: stroller
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: true
+        default_batch_fetch_size: 100
+        jdbc.batch_size: 100
+        order_inserts: true
+        order_updates: true
+
+logging:
+  level:
+    ROOT: info
+
+
