@@ -57,6 +57,7 @@ public class CarrotServiceMvc implements ProductCollector {
 
   public void updateUploadTime() {
     List<Product> products = repository.findBySourceTypeAndUploadDateIsNull(SourceType.CARROT);
+    log.info("update-target-count", products.size()); // 대상건수
     for (Product product : products) {
       String url = product.getLink();
       try {

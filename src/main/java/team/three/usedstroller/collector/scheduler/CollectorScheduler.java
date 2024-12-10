@@ -60,7 +60,6 @@ public class CollectorScheduler {
   @Scheduled(cron = "0 0 1 * * *", zone = "Asia/Seoul")
   public void collectAll() {
     log.info("collectAll start");
-    carrotService.start();
     commonService.collectAll();
   }
 
